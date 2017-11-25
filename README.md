@@ -1,3 +1,5 @@
+![](https://img.shields.io/badge/LICENSE-GPL%20v3-brightgreen.svg)
+
 # Parlament
 
 This work was done in the context of the [Data Jam Days](http://datajamdays.org/) at EPFL
