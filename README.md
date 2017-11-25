@@ -15,9 +15,9 @@ government.
 
 ## Main contribution
 
-Our insight was that voting patterns can be considered as a recommender
+_**Our insight was that voting patterns can be considered as a recommender
 system : the user-item interaction matrix is a politician-vote interaction
-matrix.
+matrix.**_
 
 The attractiveness of this method is that we get some insights "for free".
 The matrix completion setting allows for vote prediction : we can guess how
@@ -38,7 +38,7 @@ pipeline on this set.
 
 ### Full data exploration
 
-We then scraped the councillors representing 4 major parties of Switzerland :
+We then scraped the councillors representing 4 major parties of Switzerland * :
 
 * PLR
 * UDC
@@ -46,6 +46,8 @@ We then scraped the councillors representing 4 major parties of Switzerland :
 * Verts
 
 This represents 175 councillors and 1718 voting instances.
+
+\* **This is an arbitrary choice, no preferences expressed :)**
 
 ## Results and insights
 
@@ -77,6 +79,6 @@ This work is distributed with a [GPLv3 License](https://www.gnu.org/licenses/gpl
 ---
 
 ## Authors
-* Dylan Bourgeois (@dtsbourg)(https://twitter.com/dtsbourg)
+* Dylan Bourgeois ([@dtsbourg](https://twitter.com/dtsbourg))
 * Lazare Girardin (@lazareGirardin)
 * Louis Duvigneau (@loduv)
