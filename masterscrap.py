@@ -13,6 +13,17 @@ def fetch_councillor(id_, page):
 	}
 	resp = requests.get(url=url, params=params, headers=headers)
 	return resp
+	
+def fetch_factions(id_):
+	url = "http://ws-old.parlament.ch/factions/" + str(id_)
+	#print(url)
+	params = {
+		'format':'json'}
+	headers = {
+	'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36'
+	}
+	resp = requests.get(url=url, params=params, headers=headers)
+	return resp
 
 def masterscrap(conseil_dict , nb_pages):
 	"return a beautiful df. Also Lazare coded 3 nested for loops, cheers to that."
@@ -26,14 +37,14 @@ def masterscrap(conseil_dict , nb_pages):
 		counselor_votes = []
 		while(receiving):
 			_vote = fetch_councillor(v, pageIdx)
-			print (pageIdx)
 			if (_vote.status_code != requests.codes.ok or pageIdx >= maxIdx):
 				receiving = False
 			else:
 				counselor_votes.append(_vote)
 				pageIdx+=1
 		votes.append(counselor_votes)
-		print(votes)
+		percent = index / len(conseil_dict)
+		print("{}%".format(percent))
 
 	df = pd.DataFrame()
 	for counselor in votes:
