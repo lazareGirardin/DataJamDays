@@ -42,26 +42,62 @@ pipeline on this set.
 
 We then scraped the councillors representing 4 major parties of Switzerland * :
 
-* PLR
-* UDC
-* PS
+* PLR (Parti Libéral Radical) / FDP (The Liberals)
+* UDC (Union Démocratique Chrétienne)
+* PS (Parti Socialiste)
 * Verts
 
-This represents 175 councillors and 1718 voting instances.
+This represents **175 councillors** and **1718 voting instances**.
+
+A voting instance is considered to be the discussion of an article of law. There
+are several possible states for each councillor's voting behaviour on the issue :
+
+* `Yes`
+* `No`
+* `P`  = President of the concerned committee (can't vote)
+* `EH` = Abstained
+* `ES` = Absent
+* `NT` = did not participate
 
 \* *This is an arbitrary choice, no preferences expressed :)*
 
 ## Results and insights
 
+The main results of the Data Jam Days focus on the representation of voting
+in the Swiss parliament. They were projected into a 7 dimensional latent space
+and plotted by reducing down to 2 dimensions with [t-SNE](https://lvdmaaten.github.io/tsne/).
+
 ![](img/Global_Vote_map.png)
+*Figure 1 : Clusters of voting instances*
+
+The voting patterns are overlayed with a party's voting behaviour. Convention
+is to use the color green for a `Yes` vote and blue for any other voting behaviour.
+The party's line is chosen with a positive bias : if at least one of the members
+voted `Yes` it is considered the party line. This metric will be adapted in a more
+refined analysis.
 
 ![](img/Verts_votes.png)
+*Figure 2 : Clusters of voting instances with voting behaviour (Green party)*
 
 ![](img/UDC_votes.png)
+*Figure 3 : Clusters of voting instances with voting behaviour (UDC party)*
+
+We now highlight conflicting behaviours, colouring in red instances in which a pair of
+parties has voted oppositely (again, only one conflicting vote is sufficient to
+tag the vote as such) and in black instances in which parties have voted unanimously.
 
 ![](img/UDC_vs_Verts_votes.png)
+*Figure 4 : Clusters of voting instances highlighting conflicting voting patterns (Green vs UDC)*
+
+There are many conflicting cases between the Green party and the UDC party, as can be expected
+from dramatically different political lines.
 
 ![](img/PS_vs_Verts_votes.png)
+*Figure 5 : Clusters of voting instances highlighting conflicting voting patterns (Green vs PS)*
+
+PS and Green party are much closer ideologically : they often vote the same thing.
+Nevertheless we notice a cluster of diverging opinions, which can be identified in
+a more detailed analysis.
 
 ## Future work
 
@@ -76,13 +112,16 @@ for exploration include :
 * Study the temporal evolution of issues, voting patterns, divisions in the political spectrum ...
 * More fine grained differentiation of the difference in voting pattern
 
-If you feel like attempting these or know of projects that have done this in the
-past, feel free to contact us !
+*If you feel like attempting these or know of projects that have done this in the
+past, feel free to contact us !*
 
 ## Resources
 
 * [Github](https://github.com/lazareGirardin/DataJamDays)
 * [Data source](http://ws-old.parlament.ch/)
+* [Data set (`.pkl`)\*](https://github.com/lazareGirardin/DataJamDays/blob/master/parlement_votes_5pages.pkl)
+
+\* You can read this format from [within the notebook](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.read_pickle.html)
 
 ## License
 
