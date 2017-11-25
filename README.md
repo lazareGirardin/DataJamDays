@@ -53,6 +53,8 @@ This represents 175 councillors and 1718 voting instances.
 
 ## Results and insights
 
+![](img/Politician_Concept_map.png)
+
 ![](img/Global_Vote_map.png)
 
 ![](img/Verts_votes.png)
