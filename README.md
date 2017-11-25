@@ -77,6 +77,6 @@ This work is distributed with a [GPLv3 License](https://www.gnu.org/licenses/gpl
 ---
 
 ## Authors
-* Dylan Bourgeois ([@dtsbourg])(https://twitter.com/dtsbourg)
+* Dylan Bourgeois (@dtsbourg)(https://twitter.com/dtsbourg)
 * Lazare Girardin (@lazareGirardin)
 * Louis Duvigneau (@loduv)
