@@ -1,4 +1,4 @@
-def masterscrap(conseil_dic , nb_pages):
+def masterscrap(conseil_dict , nb_pages):
 	"return a beautiful df. Also Lazare coded 3 nested for loops, cheers to that."
 	
 	votes = []
@@ -18,7 +18,6 @@ def masterscrap(conseil_dic , nb_pages):
 				pageIdx+=1
 		votes.append(counselor_votes)
 		print(votes)
-
 
 	df = pd.DataFrame()
 	for counselor in votes:
