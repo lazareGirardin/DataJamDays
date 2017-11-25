@@ -68,6 +68,7 @@ in the Swiss parliament. They were projected into a 7 dimensional latent space
 and plotted by reducing down to 2 dimensions with [t-SNE](https://lvdmaaten.github.io/tsne/).
 
 ![](img/Global_Vote_map.png)
+
 *Figure 1 : Clusters of voting instances*
 
 The voting patterns are overlayed with a party's voting behaviour. Convention
@@ -77,9 +78,11 @@ voted `Yes` it is considered the party line. This metric will be adapted in a mo
 refined analysis.
 
 ![](img/Verts_votes.png)
+
 *Figure 2 : Clusters of voting instances with voting behaviour (Green party)*
 
 ![](img/UDC_votes.png)
+
 *Figure 3 : Clusters of voting instances with voting behaviour (UDC party)*
 
 We now highlight conflicting behaviours, colouring in red instances in which a pair of
@@ -87,12 +90,14 @@ parties has voted oppositely (again, only one conflicting vote is sufficient to
 tag the vote as such) and in black instances in which parties have voted unanimously.
 
 ![](img/UDC_vs_Verts_votes.png)
+
 *Figure 4 : Clusters of voting instances highlighting conflicting voting patterns (Green vs UDC)*
 
 There are many conflicting cases between the Green party and the UDC party, as can be expected
 from dramatically different political lines.
 
 ![](img/PS_vs_Verts_votes.png)
+
 *Figure 5 : Clusters of voting instances highlighting conflicting voting patterns (Green vs PS)*
 
 PS and Green party are much closer ideologically : they often vote the same thing.
@@ -122,6 +127,26 @@ past, feel free to contact us !*
 * [Data set (`.pkl`)\*](https://github.com/lazareGirardin/DataJamDays/blob/master/parlement_votes_5pages.pkl)
 
 \* You can read this format from [within the notebook](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.read_pickle.html)
+
+## Repository Structure
+
+* `data` : contains the dataset used in this project.
+* `img` : figures generated to illustrate our work.
+* `lib` : code utilities used in the project.
+* `notebook` : IPython Notebook used to run the exploration.
+
+Before running the project, you must install the requirements :
+
+```bash
+sudo pip install -r requirements.txt
+```
+
+You can then start up a Jupyter Notebook and explore the data in the
+provided notebooks :
+
+```bash
+jupyter notebook
+```
 
 ## License
 
