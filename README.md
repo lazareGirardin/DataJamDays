@@ -26,11 +26,15 @@ characteristics, embedded within the observations. We can compute similarities
 or correlations in these higher dimensional spaces to get insight on the voting
 patterns.
 
+## Results and insights
+
+## Future work
+
+
 ## Resources
 
 * [Github](https://github.com/lazareGirardin/DataJamDays)
 * [Data source](http://ws-old.parlament.ch/)
-* []()
 
 ## License
 
@@ -38,7 +42,7 @@ This work is distributed with a [GPLv3 License](https://www.gnu.org/licenses/gpl
 
 ---
 
-> Authors
-> Dylan Bourgeois ([@dtsbourg])(https://twitter.com/dtsbourg)
-> Lazare Girardin (@lazareGirardin)
-> Louis Duvigneau (@loduv)
+## Authors
+* Dylan Bourgeois ([@dtsbourg])(https://twitter.com/dtsbourg)
+* Lazare Girardin (@lazareGirardin)
+* Louis Duvigneau (@loduv)
