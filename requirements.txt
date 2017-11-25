@@ -1,0 +1,7 @@
+requests==2.18.4
+pandas==0.18.0
+json==2.0.9
+networkx==1.11
+matplotlib==1.5.3
+sklearn==0.19.1
+numpy==1.13.3
