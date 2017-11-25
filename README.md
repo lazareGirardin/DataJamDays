@@ -76,6 +76,7 @@ for exploration include :
     * What issues are most representative of a party ?
     * What are the most important / the most engaging issues being discussed ?
 * Study the temporal evolution of issues, voting patterns, divisions in the political spectrum ...
+* More fine grained differentiation of the difference in voting pattern
 
 If you feel like attempting these or know of projects that have done this in the
 past, feel free to contact us !
